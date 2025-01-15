@@ -20,7 +20,7 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 2;
-    animation: fadeOut 1.2s ease-in-out 4s forwards;
+    animation: fadeOut 1s ease-in-out 4s forwards;
 }
 
 .spanner  img{
@@ -29,18 +29,18 @@ body {
     background-color: black;
     border-radius: 5px;
     position: relative;
-    transform-origin: right center;
+    transform-origin: 80% 50%;
     animation: tighten 1.5s ease-in-out forwards;
 }
 
 .company-name {
     font-family: "Syncopate", serif;
-    font-size: 32px;
+    font-size: 80px;
     font-weight: bold;
     color: #333;
     opacity: 0;
     margin-left: 15px;
-    animation: fadeIn 1.5s ease-in-out 2s forwards;
+    animation: fadeIn 1.2s ease-in-out 2s forwards;
 }
 
 
@@ -61,7 +61,7 @@ body {
 
 /* Logo Styling */
 .logo-img {
-    max-width: 150px;
+    max-width: 300px;
     height: auto;
     margin-right: 20px;
 }
@@ -69,9 +69,10 @@ body {
 
 .nav-bar a {
     margin: 0 10px;
-    padding: 7px 10px;
+    padding: 20px 30px;
+    font-family: "Syncopate", serif;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     color: #333;
     font-weight: bold;
 }
@@ -111,7 +112,7 @@ body {
 @keyframes fadeOut {
     to {
         opacity: 0;
-        transform: translate(-160px, -120px);
+        transform: translate(-500px, -320px);
         visibility: hidden;
     }
 }
