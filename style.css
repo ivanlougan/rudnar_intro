@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Syncopate:wght@400;700&display=swap'); 
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    margin: 0;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.spanner  img{
+    width: 15vw;
+    height: auto;
+    background-color: black;
+    border-radius: 5px;
+    position: relative;
+    transform-origin: right center;
+    animation: tighten 2s ease-in-out forwards;
+}
+
+.company-name {
+    font-family: "Syncopate", serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    opacity: 0;
+    margin-left: 15px;
+    animation: fadeIn 2s ease-in-out 2s forwards;
+}
+
+/* Animation keyframes */
+@keyframes tighten {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-30deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-30deg);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
